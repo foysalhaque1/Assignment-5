@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header class="max-w-[1400px] mx-auto mt-5 bg-slate-100 border p-3 rounded-lg ">
+    <header id="header" class="max-w-[1400px] mx-auto mt-5 bg-slate-100 border p-3 rounded-lg ">
         <nav class="flex justify-between">
             <div class="flex gap-3">
                 <img src="./assets/logo.png" alt="">
@@ -33,7 +33,7 @@
         </nav>
 
     </header>
-    <main class="w-[1400px] mx-auto flex justify-between mt-6 mb-10">
+    <main id="main" class="w-[1400px] mx-auto flex justify-between mt-6 mb-10">
         <div class="w-[1000px] h-[918px] border bg-slate-100 rounded-lg ">
             <!-- main header section -->
             <section class="header flex p-4 justify-between">
@@ -52,7 +52,7 @@
                             <h2 id="total-tasks" class="text-[32px] font-bold">6</h2>
                         </div>
                     </div>
-                    
+
 
 
 
@@ -257,6 +257,43 @@
 
         </div>
     </main>
+    <!-- questions -->
+     <div id="discover-questions" class="w-[1400px] mx-auto mt-18">
+        <h1 class="text-4xl font-bold text-center text-blue-500 mb-18">Discover Something New</h1>
+
+        <div class="mt-4">
+
+            <h2 class="text-2xl font-bold">Question-1: What are the different ways to select an element in the DOM?</h2>
+            <p class="text-[20px]">Answer: getElementsByTagName(),
+                getElementsByClassName(),
+                getElementById(),
+                querySelector(),
+                querySelectorAll()</p>
+        </div>
+        <div class="mt-4">
+
+            <h2 class="text-2xl font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h2>
+            <p class="text-[20px]">Answer: innerHTML, innerText, and textContent are all JavaScript properties used to interact with the content of HTML elements, but they differ in how they handle HTML tags, whitespace, and CSS styling.</p>
+        </div>
+        <div class="mt-4">
+
+            <h2 class="text-2xl font-bold">Question-3: What is event delegation in the DOM?</h2>
+            <p class="text-[20px]">Answer: Event delegation is a technique in JavaScript where a single event listener is attached to a parent element to manage events triggered by its child elements. </p>
+        </div>
+        <div class="mt-4">
+
+            <h2 class="text-2xl font-bold">Question-4: What is event bubbling in the DOM?</h2>
+            <p class="text-[20px]">Answer: Event Bubbling: After reaching the target element (child), the event enters the bubbling phase, propagating back up through the DOM tree to the parent (parent). </p>
+        </div>
+        <div class="mt-4">
+
+            <h2 class="text-2xl font-bold">Question-5: How do you create, add, and remove elements using JavaScript?</h2>
+            <p class="text-[20px]">The document.createElement() method is used to create a new HTML element.
+                Once an element is created, it needs to be added to the DOM to be visible on the webpage. This is usually done by appending it to an existing parent element.
+            Elements can be removed from the DOM using methods on their parent node or directly on the element itself. </p>
+        </div>
+
+    </div>
     <script src="./Script/completed-btn-1.js"></script>
     <script src="./Script/completed-btn-2.js"></script>
     <script src="./Script/completed-btn-3.js"></script>

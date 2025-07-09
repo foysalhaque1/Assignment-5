@@ -1,3 +1,5 @@
+
+document.getElementById("discover-questions").style.display = "none"
 document.getElementById("completed-btn-1").addEventListener("click",
     function (event) {
         event.preventDefault();
