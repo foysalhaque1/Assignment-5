@@ -1,6 +1,7 @@
 document.getElementById("completed-btn-1").addEventListener("click",
     function(event){
         event.preventDefault();
+        const now = new Date()
         
         const totalTasks = document.getElementById("total-tasks").innerText;
         console.log(totalTasks);
@@ -21,7 +22,7 @@ document.getElementById("completed-btn-1").addEventListener("click",
         div.classList.add('bg-white','border','rounded-lg','m-[20px]','history');
         div.id = 'history-1'
         div.innerHTML = `
-        <p class="p-2"> You have Complete The Task <span class="text-blue-500"> ${title}</span> at ${Date.now()}</p>
+        <p class="p-2"> You have Complete The Task <span class="text-blue-500"> ${title}</span> at ${now}</p>
     
         
         
