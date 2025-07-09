@@ -1,7 +1,12 @@
 document.getElementById("completed-btn-2").addEventListener("click",
     function (event) {
         event.preventDefault();
-        const now = new Date()
+        const now = new Date();
+        const hours = now.getHours();
+        const minutes = now.getMinutes();
+        const seconds = now.getSeconds();
+        const ampm = hours>=12?'PM' : 'AM';
+        console.log(hours)
 
         const totalTasks = document.getElementById("total-tasks").innerText;
         console.log(totalTasks);
@@ -14,7 +19,7 @@ document.getElementById("completed-btn-2").addEventListener("click",
         const remainingTotalCompletedTasks = convertedCompletedTasks + 1;
         document.getElementById("total-tasks").innerText = remainingTotalTasks;
         document.getElementById("completed-tasks").innerText = remainingTotalCompletedTasks;
-        alert('Task-2 is completed')
+        alert(' Board Updated Successfully')
         const container = document.getElementById("activity-log");
         const div = document.createElement("div");
         const title = document.getElementById("title-2").innerText
@@ -22,7 +27,7 @@ document.getElementById("completed-btn-2").addEventListener("click",
         div.classList.add('bg-white', 'border', 'rounded-lg', 'm-[20px]', 'history');
         div.id = 'history-2'
         div.innerHTML = `
-        <p class="p-2"> You have Complete The Task <span class="text-blue-500"> ${title}</span> at ${now}</p>
+        <p class="p-2"> You have Complete The Task <span class="text-blue-500"> ${title}</span> at  ${hours}:${minutes}:${seconds} ${ampm}</p>
     
         
         
