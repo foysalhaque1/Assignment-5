@@ -1,8 +1,8 @@
 document.getElementById("completed-btn-2").addEventListener("click",
-    function(event){
+    function (event) {
         event.preventDefault();
         const now = new Date()
-        
+
         const totalTasks = document.getElementById("total-tasks").innerText;
         console.log(totalTasks);
         const convertedTotalTasks = parseInt(totalTasks);
@@ -19,7 +19,7 @@ document.getElementById("completed-btn-2").addEventListener("click",
         const div = document.createElement("div");
         const title = document.getElementById("title-2").innerText
         console.log(title);
-        div.classList.add('bg-white','border','rounded-lg','m-[20px]','history');
+        div.classList.add('bg-white', 'border', 'rounded-lg', 'm-[20px]', 'history');
         div.id = 'history-2'
         div.innerHTML = `
         <p class="p-2"> You have Complete The Task <span class="text-blue-500"> ${title}</span> at ${now}</p>
@@ -27,7 +27,17 @@ document.getElementById("completed-btn-2").addEventListener("click",
         
         
         `
-        container.appendChild(div)
-       
+        container.appendChild(div);
+        const history1 = document.getElementById("history-1")
+        const history2 = document.getElementById("history-2")
+        const history3 = document.getElementById("history-3")
+        const history4 = document.getElementById("history-4")
+        const history5 = document.getElementById("history-5")
+        const history6 = document.getElementById("history-6")
+
+        if (history1 && history2 && history3 && history4 && history5 && history6) {
+            return alert('Congrats!! You have completed all the current tasks')
+        }
+
 
     })
