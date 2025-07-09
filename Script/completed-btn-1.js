@@ -18,7 +18,8 @@ document.getElementById("completed-btn-1").addEventListener("click",
         const div = document.createElement("div");
         const title = document.getElementById("title-1").innerText
         console.log(title);
-        div.classList.add('bg-white','border','rounded-lg','m-[20px]')
+        div.classList.add('bg-white','border','rounded-lg','m-[20px]','history');
+        div.id = 'history-1'
         div.innerHTML = `
         <p class="p-2"> You have Complete The Task <span class="text-blue-500"> ${title}</span> at ${Date.now()}</p>
     
